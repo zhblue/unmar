@@ -52,7 +52,8 @@ void writefile(pack_file file,FILE * fmar){
     if(fdata==NULL) {
 		printf("fail to open file %s.\n",file.filename);
     }
-    char data;
+    fseek(fmar,file.start,SEEK_SET);
+    unsigned char data;
     for(unsigned int i=0;i<file.length;i++){
       fread(&data,1L,1L,fmar);
       fwrite(&data,1L,1L,fdata);
