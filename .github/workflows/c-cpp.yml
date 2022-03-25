@@ -18,5 +18,6 @@ jobs:
       with:
         version: latest
         platform: x64
+      run: apt-get install -y build-essential make gcc g++ 
     - name: make
       run: g++ -o unmar unmar.cc
