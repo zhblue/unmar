@@ -1,2 +1,2 @@
 all:
-   g++ -o unmar unmar.cc
+   gcc -o hello hello.c
