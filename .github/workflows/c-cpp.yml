@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: gcc -O unmar unmar.c
+      run: gcc -o unmar unmar.c
