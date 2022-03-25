@@ -14,4 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: g++ -o unmar unmar.cc
+      run: apt install g++
+      run: g++ unmar.cc
